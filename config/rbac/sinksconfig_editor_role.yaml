@@ -1,0 +1,31 @@
+# permissions for end users to edit sinksconfigs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: sinksconfig-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: kvnts
+    app.kubernetes.io/part-of: kvnts
+    app.kubernetes.io/managed-by: kustomize
+  name: sinksconfig-editor-role
+rules:
+- apiGroups:
+  - events.kvnts
+  resources:
+  - sinksconfigs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - events.kvnts
+  resources:
+  - sinksconfigs/status
+  verbs:
+  - get

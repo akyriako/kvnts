@@ -1,0 +1,6 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- events_v1_event.yaml
+- events_v1alpha1_sinksconfig.yaml
+- events_v1alpha1_sinksconfig2.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
