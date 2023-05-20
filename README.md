@@ -1,5 +1,5 @@
 # kvnts
-kvnts: A Kubernetes custom Controller to watch & forward Kubernetes Events to Grafana Loki with Promtail, push them and their correlated Logs as alerts to Slack
+A Kubernetes custom Controller to watch & forward Kubernetes Events to Grafana Loki with Promtail, push them and their correlated Logs as alerts to Slack
 
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
