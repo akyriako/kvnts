@@ -37,6 +37,8 @@ spec:
   excludedReasons: [ "FailedMount" ]
 ```
 
+You can completely omit `excludedReasons`, this is just an example of how you could in a declarative way to ignore Kubernetes Events for specific set of `Reasons` 
+
 and then install them in the cluster:
 
 ```sh
