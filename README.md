@@ -11,7 +11,7 @@ You’ll need a Kubernetes cluster to run against. You can use [KIND](https://si
 ### Running on the cluster
 0. Provide enviroment variables
 
-You are going to need to provide the values of `CLUSTER_NAME`, `LOKI_PUSH_GATEWAY_URL` and `OPENAI_API_KEY` as environment variables (just with source from an .env file if you are running locally) or as a ConfigMap if you are installing on a cluster 
+You are going to need to provide the values of `CLUSTER_NAME`, `LOKI_PUSH_GATEWAY_URL` and `OPENAI_API_KEY` as environment variables (just with source from an .env file if you are running locally) or as a `ConfigMap` if you are installing on a cluster 
 
 1. Install Instances of Custom Resources:
 
