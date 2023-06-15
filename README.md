@@ -15,6 +15,30 @@ You are going to need to provide the values of `CLUSTER_NAME`, `LOKI_PUSH_GATEWA
 
 1. Install Instances of Custom Resources:
 
+Fill in samples with the necessary Slack tokens:
+
+```yaml
+apiVersion: events.kvnts/v1alpha1
+kind: SinksConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: sinksconfig
+    app.kubernetes.io/instance: sinksconfig-sample
+    app.kubernetes.io/part-of: kvnts
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kvnts
+  name: sinksconfig-sample
+spec:
+  slack:
+    botToken: "xoxb-"
+    channelID: "C0"
+    appLevelToken: "xapp-1-"
+    debug: false
+  excludedReasons: [ "FailedMount" ]
+```
+
+and then install them in the cluster:
+
 ```sh
 kubectl apply -f config/samples/
 ```
