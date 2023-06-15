@@ -2,7 +2,7 @@
 A Kubernetes custom Controller to watch & forward Kubernetes Events to Grafana Loki with Promtail, push them and their correlated Logs as alerts to Slack
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+Refer to this [medium article](https://betterprogramming.pub/kubernetes-observability-part-1-events-logs-integration-with-slack-openai-and-grafana-62068cf43ec) for more analytical information 
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
